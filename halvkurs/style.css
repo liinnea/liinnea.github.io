@@ -1,0 +1,132 @@
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+main{
+
+    display: grid;
+    padding: 3%;
+
+}
+
+nav{
+
+    display: grid;
+    gap: 1rem;
+
+}
+
+nav a{
+
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: rgb(48,0,0);
+
+}
+
+.scroll{
+
+    display: grid;
+    gap: 1rem;
+    padding: 3%;
+
+}
+
+
+
+.card{
+
+    border: 1px solid black;
+    padding: 3%;
+    border-radius: 3%;
+
+}
+
+.imgBox{
+
+    aspect-ratio: 1/1;
+
+}
+
+.imgBox img{
+
+    height: 100%;
+    object-fit: cover;
+
+}
+
+@media(min-width:600px){
+
+    nav{
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    nav a{
+
+        text-align: center;
+
+    }
+
+    main .scroll{
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+
+footer{
+
+    padding: 3%;
+    display: grid;
+    gap: 1rem;
+
+}
+
+footer a{
+
+    border: solid black 1px;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(48, 0, 0);
+    width: max-content;
+
+}
+
+#scroll1{
+
+
+    display: grid;
+    grid-template-columns: repeat(6, 60vw);
+    overflow-x: scroll;
+    gap: 20px;
+    scroll-snap-type:x mandatory;
+
+}
+
+.card{
+
+    scroll-snap-align: center;
+
+}
+
+.mina{
+
+    padding: 2%;
+
+}
+
+.ett{
+
+    border: 1px solid black;
+    display: grid;
+    gap: 1rem;
+    padding: 4%;
+
+}
+
