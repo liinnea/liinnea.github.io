@@ -26,16 +26,6 @@ nav a{
 
 }
 
-.scroll{
-
-    display: grid;
-    gap: 1rem;
-    padding: 3%;
-
-}
-
-
-
 .card{
 
     border: 1px solid black;
@@ -68,12 +58,6 @@ nav a{
     nav a{
 
         text-align: center;
-
-    }
-
-    main .scroll{
-
-        grid-template-columns: repeat(3, 1fr);
 
     }
 
@@ -130,3 +114,14 @@ footer a{
 
 }
 
+@media(min-width:1000px){
+
+    #scroll{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        overflow-x: hidden;
+
+    }
+
+}
