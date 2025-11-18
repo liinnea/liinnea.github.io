@@ -119,6 +119,18 @@ footer a{
     #scroll{
 
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        overflow-x: hidden;
+
+    }
+
+}
+
+@media(min-width:1400px){
+
+    #scroll{
+
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         overflow-x: hidden;
 
