@@ -37,6 +37,7 @@ nav a{
 .imgBox{
 
     aspect-ratio: 1/1;
+    overflow: hidden;
 
 }
 
@@ -44,6 +45,7 @@ nav a{
 
     height: 100%;
     object-fit: cover;
+ 
 
 }
 
@@ -96,6 +98,11 @@ footer a{
 .card{
 
     scroll-snap-align: center;
+    display: grid;
+    grid-template-rows: 0.26fr 1fr 0.6fr auto;
+
+    gap:1rem;
+    padding:7%;
 
 }
 
@@ -113,6 +120,15 @@ footer a{
     padding: 4%;
 
 }
+
+/* .textBox{
+        border:1px solid red;
+    padding:3%;
+}
+.btnbox{
+    border:1px solid pink;
+    padding:3%;
+} */
 
 @media(min-width:1000px){
 
@@ -135,5 +151,12 @@ footer a{
         overflow-x: hidden;
 
     }
+
+}
+
+.rubrik{
+
+    padding: 5%;
+    place-items: center;
 
 }
