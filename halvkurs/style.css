@@ -130,6 +130,16 @@ footer a{
     padding:3%;
 } */
 
+@media(min-width:700px){
+
+    .card{
+
+        grid-template-rows: 20fr 100fr 30fr auto;
+
+    }
+
+}
+
 @media(min-width:1000px){
 
     #scroll{
@@ -137,6 +147,12 @@ footer a{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         overflow-x: hidden;
+
+    }
+
+    .card{
+
+        grid-template-rows: 20fr 100fr 30fr auto;
 
     }
 
@@ -152,11 +168,27 @@ footer a{
 
     }
 
+    .card{
+
+        grid-template-rows: 24fr 100fr 40fr auto;
+
+    }
+
 }
 
 .rubrik{
 
     padding: 5%;
     place-items: center;
+
+}
+
+@media(min-width:1558px){
+
+    .card{
+
+        grid-template-rows: auto 10fr 3fr auto;
+
+    }
 
 }
