@@ -38,17 +38,39 @@
 
         <div class="roll">
 
-            <div class="imgRoll">
-                <img src="https://resizing.flixster.com/pjuOuGT02ov7959hGrqxjNxRuf8=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/269690_v9_bb.jpg" alt="">
+            <div class="text">
+
+                <div class="imgRoll">
+                    <img onclick="enlarge(this)" src="https://resizing.flixster.com/pjuOuGT02ov7959hGrqxjNxRuf8=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/269690_v9_bb.jpg" alt="">
+                </div>
+
+                <p>Rosamund Pike</p>
+
             </div>
 
-            <div class="imgRoll">
-                <img src="https://www.harrywalker.com/media/20653388/affleck_ben-headshot.jpg?rxy=0.49862258953168043,0.48997772828507796&width=362&height=449&rnd=133688941125270000" alt="">
+            <div class="text">
+
+                <div class="imgRoll">
+                    <img onclick="enlarge(this)" src="https://www.harrywalker.com/media/20653388/affleck_ben-headshot.jpg?rxy=0.49862258953168043,0.48997772828507796&width=362&height=449&rnd=133688941125270000" alt="">
+                </div>
+
+                <p>Ben Affleck</p>
+
             </div>
 
         </div>
 
     </footer>
+
+    <script>
+
+        function enlarge(el){
+
+            el.classList.toggle("large");
+
+        }
+
+    </script>
 
 </body>
 </html>
