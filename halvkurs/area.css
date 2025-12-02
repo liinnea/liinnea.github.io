@@ -1,7 +1,7 @@
 *{
 
     margin: 0%;
-    
+
 }
 
 header{
@@ -24,18 +24,25 @@ header{
 .img{
 
     grid-area: header;
+    z-index: 1;
 
 }
 
 #rubrik{
 
     position: relative;
-    z-index: 3;
+    z-index: 2;
     grid-area: header;
     color: white;
     font-size: 3rem;
     place-self: center;
     padding: 2%;
+
+}
+
+a #knapp{
+
+    border: 1px solid white;
 
 }
 
