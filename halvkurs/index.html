@@ -12,13 +12,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <nav>
+
+        <button onclick="toggleMenu()" class="menuButton">
+            &equiv;
+        </button>
+
+        <nav id="nav" >
             <a href="/">HOME</a>
             <a href="#contact">CONTACT</a>
             <a href="#faq">FAQ</a>
         </nav>
+
     </header>
+
     <main>
 
         <div class="ett">
@@ -308,6 +316,16 @@
         <a href="#top">UPP</a>
 
     </footer>
+
+    <script>
+
+        function toggleMenu(){
+
+            document.querySelector("nav").classList.toggle("hidden")
+
+        }
+
+    </script>
 
 </body>
 </html>

@@ -22,7 +22,7 @@ nav a{
 
     text-decoration: none;
     font-size: 1.4rem;
-    color: rgb(48,0,0);
+    color: rgb(0, 0, 0);
 
 }
 
@@ -63,6 +63,19 @@ nav a{
 
     }
 
+    .menuButton{
+
+        display: none;
+
+    }
+
+    #nav{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
 }
 
 footer{
@@ -79,7 +92,7 @@ footer a{
     padding: 1%;
     text-decoration: none;
     font-size: 1rem;
-    color: rgb(48, 0, 0);
+    color: rgb(0, 0, 0);
     width: max-content;
 
 }
@@ -190,5 +203,28 @@ footer a{
         grid-template-rows: auto 10fr 3fr auto;
 
     }
+
+}
+
+
+.hidden{
+
+    display: none;
+
+}
+
+header{
+
+    display: grid;
+    gap: 10px;
+
+}
+
+header button{
+
+    font-size: 1.8rem;
+    width: 3rem;
+    align-content: center;
+    background-color: white;
 
 }
