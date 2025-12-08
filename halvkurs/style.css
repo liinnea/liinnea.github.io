@@ -220,11 +220,13 @@ header{
 
 }
 
-header button{
+.menuButton{
 
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     width: 3rem;
     align-content: center;
     background-color: white;
+    border: none;
 
 }
+
