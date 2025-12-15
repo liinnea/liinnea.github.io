@@ -230,3 +230,10 @@ header{
 
 }
 
+#contact, #about{
+
+    display: grid;
+    gap: 10px;
+    padding: 1%;
+
+}
