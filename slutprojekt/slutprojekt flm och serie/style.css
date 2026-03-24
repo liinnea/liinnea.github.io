@@ -19,6 +19,12 @@ header, main, footer, nav{
 
 }
 
+.hidden{
+
+    display: none;
+
+}
+
 nav{
 
     display: grid;
@@ -34,31 +40,14 @@ nav a{
 
 }
 
-@media(width)
+.menuButton{
 
-main{
-
-    display: grid;
-
-}
-
-.card{
-
-    container-type: inline-size;
+    border: none;
+    background-color: transparent;
+    font-size: 2.5rem;
+    padding: 1%;
 
 }
-
-.innerCard{
-
-    border: 1px solid rgb(0, 0, 0);
-    padding: 5%;
-
-}
-
-
-@container(inline-size > 500px){}
-
-
 
 .imgBox{
 
@@ -80,3 +69,90 @@ img{
 
 }
 
+@media(min-width:500px){
+
+    nav{
+
+        grid-template-columns: repeat(3,1fr);
+
+    }
+
+    nav a{
+
+        text-align: center;
+
+    }
+
+    .menuButton{
+
+        display: none;
+
+    }
+
+    #nav{
+
+        display: grid;
+
+    }
+
+}
+
+.card .title{
+
+    text-align: center;
+
+}
+
+
+main, footer{
+
+    display: grid;
+    gap: 20px;
+
+}
+
+footer a{
+
+    text-decoration: none;
+    font-size: 1rem;
+    border: 1px solid black;
+    color: black;
+    width: fit-content;
+    padding: 1%;
+
+}
+
+.card{
+
+    container-type: card / inline-size;
+
+}
+
+.innerCard{
+
+    display: grid;
+    gap: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5%;
+    border-radius: 3%;
+
+}
+
+
+
+
+@container card (inline-size > 500px){
+
+    .innerCard{
+
+        padding: 3%;
+
+    }
+
+    .card .imgBox{
+
+        aspect-ratio: 2/1;
+
+    }
+
+}

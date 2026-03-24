@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Film och Serie 2.0</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-     <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.min.js"></script>
+    <script src="index.js" defer></script>
 </head>
+
 <body>
 
     <header>
 
-        <nav>
+        <button onclick="toggleMenu()" class="menuButton" >&equiv;</button>
+
+        <nav id="nav" >
 
             <a href="/">HOME</a>
             <a href="#contact">CONTACT</a>
-            <a href="#faq">FAQ</a>
+            <a href="#about">ABOUT</a>
 
         </nav>
 
@@ -23,37 +29,26 @@
 
     <main>
 
-        <div class="card">
-
-        <div class="innerCard">
-
-            <div class="title">
-
-                <h2>Gone Girl</h2>
-
-            </div>
-
-            <div class="imgBox">
-
-                <img src="https://m.media-amazon.com/images/M/MV5BMTk0MDQ3MzAzOV5BMl5BanBnXkFtZTgwNzU1NzE3MjE@._V1_.jpg" alt="">
-
-            </div>
-
-            <div class="text">
-
-                <p></p>
-
-            </div>
-
-        </div>
-
-    </div>
+        <div hx-get="html/card.html" hx-trigger="load" hx-swap="outerHTML"></div>
+        <div hx-get="html/card.html" hx-trigger="load" hx-swap="outerHTML"></div>
+        <div hx-get="html/card.html" hx-trigger="load" hx-swap="outerHTML"></div>
+        <div hx-get="html/card.html" hx-trigger="load" hx-swap="outerHTML"></div>
+        <div hx-get="html/card.html" hx-trigger="load" hx-swap="outerHTML"></div>
+        <div hx-get="html/card.html" hx-trigger="load" hx-swap="outerHTML"></div>
 
     </main>
 
-    <footer></footer>
+    <footer>
 
-    
-    
+        <div hx-get="html/contact.html" hx-trigger="load" hx-swap="outerHTML" ></div>
+        <div hx-get="html/about.html" hx-trigger="load" hx-swap="outerHTML" ></div>
+
+        <a href="#top">UPP</a>
+
+    </footer>
+
+
+
 </body>
+
 </html>
