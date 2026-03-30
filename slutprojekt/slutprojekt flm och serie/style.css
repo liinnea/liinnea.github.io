@@ -124,13 +124,15 @@ footer a{
 
 .card{
 
-    container-type: card / inline-size;
+    container: card / inline-size;
+    display: grid;
 
 }
 
 .innerCard{
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     border: 1px solid rgb(0, 0, 0);
     padding: 5%;
@@ -151,8 +153,13 @@ footer a{
 
     .card .imgBox{
 
-        aspect-ratio: 2/1;
+        aspect-ratio: 1/1;
 
     }
+
+}
+
+@container card (inline-size > 600px){
+
 
 }

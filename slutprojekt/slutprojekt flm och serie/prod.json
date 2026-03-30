@@ -1,0 +1,44 @@
+[
+
+  {
+    "id": "id_001",
+    "title": "Gone Girl",
+    "description": "Over-ear wireless headphones with noise cancellation, 30-hour battery life, and deep bass sound.",
+    "img": "https://example.com/images/id_001.jpg"
+  },
+
+  {
+    "id": "id_002",
+    "title": "Parasit",
+    "description": "Water-resistant fitness tracker with heart rate monitoring, GPS, and sleep tracking features.",
+    "img": "https://example.com/images/id_002.jpg"
+  },
+
+  {
+    "id": "id_003",
+    "title": "Draktränaren 2",
+    "description": "Compact speaker with powerful sound, 12-hour playtime, and IPX7 waterproof rating.",
+    "img": "https://example.com/images/id_003.jpg"
+  },
+
+  {
+    "id": "id_004",
+    "title": "Captain America: The Winter Soldier",
+    "description": "Rugged action camera with 4K recording, wide-angle lens, and waterproof housing.",
+    "img": "https://example.com/images/id_004.jpg"
+  },
+
+  {
+    "id": "id_005",
+    "title": "Se7en",
+    "description": "Adjustable office chair with lumbar support, breathable mesh back, and padded armrests.",
+    "img": "https://example.com/images/id_005.jpg"
+  },
+
+  {
+    "id": "id_006",
+    "title": "Black Swan",
+    "description": "RGB backlit mechanical keyboard with customizable keys and fast response switches.",
+    "img": "https://example.com/images/id_006.jpg"
+  }
+]
