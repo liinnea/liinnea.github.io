@@ -1,0 +1,44 @@
+[
+  {
+    "id": "id_001",
+    "title": "Gone Girl",
+    "description": "På Nicks och Amys femte bröllopsdag anmäler Nick sin fru saknad. Det dröjer inte länge innan hans lögner och underliga beteende får alla att ställa sig den obehagliga frågan: har Nick Dunne mördat sin fru?",
+    "img": "",
+    "info": "EXTRA"
+  },
+  {
+    "id": "id_002",
+    "title": "Parasit",
+    "description": "Ki-taeks familj är en färgstark skara som hankar sig fram genom livet med hjälp av påhittighet och list. Men några pengar har de inte. Så när sonen, Ki-Woo, erbjuds jobbet som privatlärare till dottern i en rik familj så tvekar han inte en sekund.",
+    "img": "https://example.com/images/id_002.jpg",
+    "info": "EXTRA"
+  },
+  {
+    "id": "id_003",
+    "title": "Draktränaren 2",
+    "description": "Hicke och Tandlöse är tillbaka! De två är nu oskiljaktiga, och medan de andra i gänget utmanar varandra i den nya sporten draklopp, ger de sig ut på flygturer för att upptäcka nya världar istället.",
+    "img": "https://example.com/images/id_003.jpg",
+    "info": "EXTRA"
+  },
+  {
+    "id": "id_004",
+    "title": "Captain America: The Winter Soldier",
+    "description": "Steve Rogers, mer känd som Captain America, försöker att anpassa sig till den moderna världen. När S.H.I.E.L.D. attackeras dras han dock in i en härva av intriger som hotar hela mänskligheten.",
+    "img": "https://example.com/images/id_004.jpg",
+    "info": ""
+  },
+  {
+    "id": "id_005",
+    "title": "Se7en",
+    "description": "Mordutrederna Mills och Somerset jagar desperat efter en seriemördare vars brott bygger på de sju dödssynderna.",
+    "img": "https://example.com/images/id_005.jpg",
+    "info": "EXTRA"
+  },
+  {
+    "id": "id_006",
+    "title": "Black Swan",
+    "description": "En ballerina börjar sakta förlora vettet när en nykomling i baletten hotar att inkräkta på hennes position som den ledande dansaren i Svansjön.",
+    "img": "https://example.com/images/id_006.jpg",
+    "info": "EXTRA"
+  }
+]
