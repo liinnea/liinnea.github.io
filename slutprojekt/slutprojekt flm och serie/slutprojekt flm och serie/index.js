@@ -71,7 +71,7 @@ function Prod({prod}){
             <h2 className="title" >{prod.title}</h2>
             <div className="imgBox" >
 
-                <img src="{prod.img}" alt="no_image" ></img>
+                <img src={prod.img} alt="no_image" ></img>
 
             </div>
             <p className="description" > {prod.description} </p>
@@ -79,7 +79,9 @@ function Prod({prod}){
 
 
             {info ?    <div className="info">
-                <h3>{prod.info}</h3>
+                <h3>{prod.title}</h3>
+                <p>{prod.info.description}</p>
+                <p>{prod.info.img}</p>
                  <button onClick={toggleInfo} className="btnBox" >CLOSE</button>
             </div> : ""}
          

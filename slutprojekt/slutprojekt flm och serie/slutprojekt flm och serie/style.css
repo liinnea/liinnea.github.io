@@ -146,6 +146,26 @@ footer a{
 
 }
 
+@container card (inline-size>500px){
+
+    .innerCard{
+        padding: 4%;
+    }
+
+    .outerCard .imgBox{
+        aspect-ratio: 1/1;
+        overflow: hidden;
+    }
+
+    .outerCard img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+
+
 
 .info{
 
