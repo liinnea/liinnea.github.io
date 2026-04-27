@@ -79,10 +79,11 @@ function Prod({prod}){
 
 
             {info ?    <div className="info">
+                {prod.info.img.map(img=> <img className="info-img" src={img} alt="" key = {img} />)}
+                
                 <h3>{prod.title}</h3>
-                <p>{prod.info.description}</p>
-                <p>{prod.info.img}</p>
-                 <button onClick={toggleInfo} className="btnBox" >CLOSE</button>
+                <p className="info-desc" >{prod.info.description}</p>
+                <button onClick={toggleInfo} className="btnBox" >CLOSE</button>
             </div> : ""}
          
 

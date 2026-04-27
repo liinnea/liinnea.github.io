@@ -129,9 +129,9 @@ footer a{
 
 }
 
-.outerCard{
+.products{
 
-    container: card / inline-size;
+    container: products / inline-size;
     display: grid;
 
 }
@@ -146,25 +146,44 @@ footer a{
 
 }
 
-@container card (inline-size>500px){
+@container products (inline-size>500px){
 
-    .innerCard{
+    .card{
         padding: 4%;
     }
 
-    .outerCard .imgBox{
+    .products .imgBox{
         aspect-ratio: 1/1;
         overflow: hidden;
     }
 
-    .outerCard img{
+    .products img{
         height: 100%;
         object-fit: cover;
     }
 
 }
 
+@container products (inline-size>700px){
 
+    .products .imgBox{
+        aspect-ratio: 3/1;
+    }
+
+}
+
+@container products (inline-size>900px){
+
+    .card{
+        display: grid;
+        grid-template-columns: repeat(3fr 2fr);
+    }
+
+    .products .imgBox{
+        aspect-ratio: 1/1;
+    }
+
+}
 
 
 .info{
