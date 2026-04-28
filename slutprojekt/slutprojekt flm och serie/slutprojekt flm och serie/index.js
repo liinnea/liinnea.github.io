@@ -66,26 +66,32 @@ function Prod({prod}){
 
     return(
 
-        <div className="card">
+        <div className="outerCard" >
 
-            <h2 className="title" >{prod.title}</h2>
-            <div className="imgBox" >
+            <div className="innerCard">
 
-                <img src={prod.img} alt="no_image" ></img>
+                <div className="imgBox" >
+
+                    <img src={prod.img} alt="no_image" ></img>
+
+                </div>
+
+                <div className="textBox" >
+                    <h2 className="title" >{prod.title}</h2>
+                    <p className="description" > {prod.description} </p>
+                    <button onClick={toggleInfo} className="btnBox" >LÄS MER</button>
+                </div>
+
+                {info ?    <div className="info">
+                    {prod.info.img.map(img=> <img className="info-img" src={img} alt="" key = {img} />)}
+                    
+                    <h3>{prod.title}</h3>
+                    <p className="info-desc" >{prod.info.description}</p>
+                    <button onClick={toggleInfo} className="btnBox" >CLOSE</button>
+                </div> : ""}
+            
 
             </div>
-            <p className="description" > {prod.description} </p>
-            <button onClick={toggleInfo} className="btnBox" >LÄS MER</button>
-
-
-            {info ?    <div className="info">
-                {prod.info.img.map(img=> <img className="info-img" src={img} alt="" key = {img} />)}
-                
-                <h3>{prod.title}</h3>
-                <p className="info-desc" >{prod.info.description}</p>
-                <button onClick={toggleInfo} className="btnBox" >CLOSE</button>
-            </div> : ""}
-         
 
         </div>
 

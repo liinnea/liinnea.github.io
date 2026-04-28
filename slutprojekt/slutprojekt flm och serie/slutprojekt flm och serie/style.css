@@ -14,7 +14,6 @@ html{
 
 header, main, footer, nav{
 
-    border: 1px solid black;
     padding: 5%;
 
 }
@@ -29,6 +28,8 @@ nav{
 
     display: grid;
     gap: 1rem;
+    border: 1px solid black;
+    background-color: white;
 
 }
 
@@ -37,6 +38,12 @@ nav a{
     text-decoration: none;
     font-size: 1.5rem;
     color: black;
+
+}
+
+body{
+
+    background-color: rgba(172, 151, 151, 0.418);
 
 }
 
@@ -104,7 +111,7 @@ img{
 
 }
 
-.card .title{
+.innerCard .title{
 
     text-align: center;
 
@@ -131,56 +138,89 @@ footer a{
 
 .products{
 
-    container: products / inline-size;
     display: grid;
+    gap: 20px;
 
 }
 
-.card{
+.outerCard{
 
-    display: grid;
-    gap: 20px;
+    container: card / inline-size;
     border: 1px solid rgb(0, 0, 0);
     padding: 5%;
     border-radius: 3%;
+    display: grid;
+    background-color: white;
 
 }
 
-@container products (inline-size>500px){
+.innerCard{
 
-    .card{
+    display: grid;
+    gap: 20px;
+    padding: 3%;
+
+}
+
+.textBox{
+
+    display: grid;
+    gap: 10px;
+
+}
+
+@container card (inline-size>500px){
+
+    .innerCard{
         padding: 4%;
     }
 
-    .products .imgBox{
+    .outerCard .imgBox{
         aspect-ratio: 1/1;
         overflow: hidden;
     }
 
-    .products img{
+    .outerCard img{
         height: 100%;
         object-fit: cover;
     }
 
 }
 
-@container products (inline-size>700px){
+@container card (inline-size>700px){
 
-    .products .imgBox{
-        aspect-ratio: 3/1;
+    .innerCard{
+        padding: 5%;
+    }
+
+    .outerCard .imgBox{
+        aspect-ratio: 3/2;
     }
 
 }
 
-@container products (inline-size>900px){
+@container card (inline-size>900px){
 
-    .card{
+    .innerCard{
         display: grid;
-        grid-template-columns: repeat(3fr 2fr);
+        grid-template-columns: 2fr 3fr;
     }
 
-    .products .imgBox{
+    .outerCard .imgBox{
         aspect-ratio: 1/1;
+    }
+
+    .outerCard{
+
+        padding: 0;
+
+    }
+
+    .textBox{
+
+        display: flex;
+        flex-direction: column;
+
     }
 
 }
@@ -195,3 +235,23 @@ footer a{
     width: 100%;
     left: 0;
 }
+
+/* .info-img{
+
+    overflow: hidden;
+
+}
+
+.info-img img{
+
+    animation: zoom / 4s;
+
+}
+
+@keyframes zoom {
+
+    to{
+        transform: scale(1.2);
+    }
+    
+} */
