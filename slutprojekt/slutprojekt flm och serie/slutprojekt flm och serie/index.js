@@ -99,5 +99,27 @@ function Prod({prod}){
 
 }
 
+/* changeImg();
+
+function changeImg(){
+
+    const images = ["https://th.bing.com/th/id/R.e497987622f1996137643c5d46a02a65?rik=%2fRCGsPP%2bGdj7%2fQ&riu=http%3a%2f%2fwww.critique-film.fr%2fwp-content%2fuploads%2f2014%2f10%2fgone-girl-02.jpg&ehk=%2f5TyIvCvaJK7lsjWr5YsPubJdfNzBjK8XBCJ56ie0To%3d&risl=&pid=ImgRaw&r=0", "https://www.slashfilm.com/img/gallery/ben-affleck-was-cast-in-gone-girl-because-of-his-awkward-red-carpet-smile/intro-1696029122.jpg"]
+    const index = 0
+    const img = document.querySelector(".info")
+
+    setInterval(()=>(
+
+        index = index + 1;
+        if(index==img.length) index = 0;
+
+        img.src = images[index];
+
+    ), 8000){
+
+    }
+
+
+} */
+
 
 
