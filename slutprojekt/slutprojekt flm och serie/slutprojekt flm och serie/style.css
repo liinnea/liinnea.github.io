@@ -12,6 +12,43 @@ html{
 
 }
 
+:root{
+    --red:180;
+    --green:230;
+    --blue:260;
+    --alpha:1;
+}
+
+/* .outerCard:first-of-type{
+
+    background-color: rgb(var(--red), var(--green), var(--blue), var(--alpha));   
+
+}
+
+.outerCard:nth-child(2){
+
+    background-color: rgba(var(--red), var(--green), var(--blue), calc(var(--alpha) * 0.2));
+
+}
+
+.outerCard:nth-child(3){
+
+    background-color: rgba(var(--red), var(--green), var(--blue), calc(var(--alpha) * 0.4)) ;
+
+}
+
+.outerCard:nth-child(4){
+
+    background-color: rgba(var(--red), var(--green), var(--blue), calc(var(--alpha) * 0.6));
+
+}
+
+.outerCard:nth-child(5){
+
+    background-color: rgba(var(--red), var(--green), var(--blue), calc(var(--alpha) * 0.8));
+
+} */
+
 header, main, footer, nav{
 
     padding: 5%;
@@ -27,6 +64,28 @@ main, footer{
 
 footer, #about, #contact{
     border: 1px solid black;
+}
+
+#about, #contact{
+    background-color: white;
+    padding: 5%;
+    display: grid;
+    gap: 10px;
+
+}
+
+.textAbout{
+
+    display: grid;
+    gap: 10px;
+
+}
+
+.textContact{
+
+    display: grid;
+    gap: 5px;
+
 }
 
 .hidden{
@@ -118,8 +177,7 @@ img{
 @media(min-width:700px){
 
     footer{
-        display: flex;
-        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
     }
 
 }
@@ -221,14 +279,21 @@ footer a{
 
 .info{
 
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     height:100vh;
     position: fixed;
     top:0;
     width: 100%;
     left: 0;
     overflow-y: auto;
+    display: grid;
+    gap: 1rem;
+    place-items: center;
 
+}
+
+.info h3,.info-desc{
+    color: white;
 }
 
 /* .info-img{

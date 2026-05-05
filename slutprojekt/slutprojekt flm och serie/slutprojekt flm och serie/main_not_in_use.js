@@ -1,4 +1,4 @@
-async function getData(){
+/* async function getData(){
 
     const res = await fetch("prod.json");
     const data = await res.json();
@@ -33,4 +33,4 @@ function genCard(prod){
 
     return card;
 
-}
+} */
